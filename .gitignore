@@ -2,6 +2,7 @@
 .DS_Store
 
 # Large files
+data
 data/
 
 # MATLAB

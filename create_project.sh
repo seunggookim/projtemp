@@ -15,6 +15,7 @@ gh repo create ${ProjName} --template projtemp --private
 gh repo clone ${ProjName}
 cd ${ProjName}
 echo "# ${ProjName}" > README.md
+rm create_project.sh
 git add .
-git commit -m "Initial commitm"
+git commit -m "Initial commit"
 git push
