@@ -7,10 +7,6 @@ then
 fi
 
 ProjName=${1}
-#Dnames="code data docs figs meta"
-#for Dname_ in ${Dnames}; do
-#    mkdir -p ${ProjName}/${Dname_}
-#done
 gh repo create ${ProjName} --template projtemp --private
 gh repo clone ${ProjName}
 cd ${ProjName}
