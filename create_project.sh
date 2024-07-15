@@ -30,6 +30,7 @@ The folder name "data" is set NOT TO SYNCHRONIZED (see \`.gitignore\`)
 EOF
 rm create_project.sh
 rm pull_everything.sh
+mkdir data
 git add .
 git commit -m "Initial commit"
 git push
