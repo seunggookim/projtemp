@@ -15,7 +15,7 @@ cat << EOF > README.md
 
 ## directory structure
 
-### On respo (synchronized)
+### Synchronized
 \`./code\`  for functions, scripts, small (<50 MB) packages for each language
 
 \`./docs\`  for documents (notes, presentation slides, manuscripts, other human-readable files)
@@ -24,7 +24,7 @@ cat << EOF > README.md
 
 \`./meta\`  for small (<50 MB) meta-data files
 
-### On local (not synchronized)
+### Not synchronized
 \`./data\`  for large (>50 MB) files. \
 The folder name "data" is set NOT TO SYNCHRONIZED (see \`.gitignore\`)
 EOF
