@@ -2,9 +2,22 @@
 
 if [ ! `which gh` ]
 then
-    echo "INSTALL github-cli: https://github.com/cli/cli/blob/trunk/docs/install_linux.md"
-    exit
+    echo "[ERROR] INSTALL github-cli: https://github.com/cli/cli/blob/trunk/docs/install_linux.md"
+    exit 1
 fi
+
+if ! (($#)); then
+  echo "[ERROR] {NEW_REPO_NAME} should be given!" >&2
+  cat << EOF
+
+CREATEPROJECT.SH creates a project from a template (PROJTEMP) in Github. It requires Github command line interface "GH".
+USAGE:    ./createprojet.sh {NEW_REPO_NAME}
+EXAMPLE:  ./createprojet.sh my_new_awesome_project
+(cc) 2024, dr.seunggoo.kim@gmail.com
+EOF
+  exit 2
+fi
+
 
 ProjName=${1}
 gh repo create ${ProjName} --template projtemp --private
