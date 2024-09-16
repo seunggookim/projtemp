@@ -21,7 +21,7 @@ fi
 
 ProjName=${1}
 gh repo create ${ProjName} --template projtemp --private
-SLEEP 3
+sleep 3 # give a few seconds to github to create a new one
 gh repo clone ${ProjName}
 cd ${ProjName}
 cat << EOF > README.md
