@@ -5,7 +5,7 @@ do
   if [ -d ${DN}/.git ]
   then
     cd ${DN}
-    git pull
+    git pull --recurse
     sleep 3
   fi
 done
