@@ -1,3 +1,6 @@
 [submodule "code/tools/ncml-code"]
 	path = code/tools/ncml-code
 	url = git@github.com:seunggookim/ncml-code
+[submodule "code/ncml-code"]
+	path = code/ncml-code
+	url = git@github.com:seunggookim/ncml-code
