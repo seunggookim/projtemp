@@ -22,7 +22,7 @@ fi
 ProjName=${1}
 gh repo create ${ProjName} --template projtemp --private
 sleep 3 # give a few seconds to github to create a new one
-gh repo clone ${ProjName} --recurse-submodules
+gh repo clone ${ProjName}
 cd ${ProjName}
 cat << EOF > README.md
 # ${ProjName}
@@ -49,4 +49,8 @@ mkdir data
 git add .
 git commit -m "Initial commit"
 git push
+git submodule update --init --recursive
+
+cd ./code/ncml-code
+git checkout main
 
