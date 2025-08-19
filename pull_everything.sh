@@ -5,6 +5,8 @@ do
   if [ -d ${DN}/.git ]
   then
     cd ${DN}
+    git add .
+    git commit -m .
     git pull --recurse
     sleep 3
   fi
