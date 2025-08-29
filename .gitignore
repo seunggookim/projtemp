@@ -1,8 +1,10 @@
+# Local env
+local/
+
 # Mac .DS_Store
 .DS_Store
 
 # Large files
-data
 data/
 
 # MATLAB
